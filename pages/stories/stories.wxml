@@ -1,0 +1,16 @@
+<!--pages/stories/stories.wxml-->
+<view class="header">
+  <view class="title">Fuck my code</view>
+  <view class="slogan">Fuck it good</view>
+</view>
+
+<block wx:for="{{stories}}" wx:key="{{stories}}">
+  <view class="stories">
+    <view class="stories-header">
+      <view class="stories-header-text">Today</view>
+    </view>
+    <view class="stories-description">
+      <view class="stories-text">{{item}}</view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/stories/stories",
+    "pages/post/post"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Fuck my code",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#000",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "borderStyle": "#D3D3D3",
+    "selectedColor": "#D03232",
+    "color": "#dddddd",
+    "list": [
+      {
+        "pagePath": "pages/stories/stories",
+        "text": "Stories",
+        "iconPath": "/commons/assets/icons/home-unactive.png",
+        "selectedIconPath": "/commons/assets/icons/home.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "Post",
+        "iconPath": "/commons/assets/icons/post-unactive.png",
+        "selectedIconPath": "/commons/assets/icons/post.png"
+      }
+    ]
+  }
+}

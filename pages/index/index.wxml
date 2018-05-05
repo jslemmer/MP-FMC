@@ -1,0 +1,8 @@
+<!--index.wxml-->
+  <view class="banner">
+    <view class="banner-content">
+      <view class="h1">Fuck my code</view>
+      <view class="p">fuck it good</view>
+      <button type="primary" bindtap="loadStories">Start fucking</button>
+    </view>
+  </view>

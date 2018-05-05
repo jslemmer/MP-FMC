@@ -1,0 +1,7 @@
+<!--pages/post/post.wxml-->
+<view class="section">
+  <form bindsubmit="submitStory">
+    <textarea class="textbox" placeholder="write your story here" name="textarea"/>
+    <button form-type="submit" type="primary">Submit</button>
+  </form>
+</view>
