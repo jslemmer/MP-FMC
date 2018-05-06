@@ -7,14 +7,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    stories: app.globalData.stories
+    
   },
 
   submitStory: function (e) {
     console.log('submit story')
 
-    app.globalData.stories.push(e.detail.value.textarea)    
-    console.log(app.globalData.stories)
+    app.globalData.stories.push(e.detail.value.textarea)  
+    
+    wx.setStorage({
+      key: 'stories',
+      data: app.globalData.stories
+    })
+
+    // console.log(app.globalData.stories)
 
     wx.showToast({
       title: 'Saving...',
