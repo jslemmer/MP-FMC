@@ -10,15 +10,18 @@
 </view>
 
 <block wx:for="{{stories}}" wx:for-item="item" wx:for-index="itemsIndex" wx:key="stories">
-  <view class="stories">
-    <view class="stories-header">
-      <view class="stories-header-text">
-        {{item.datetime}}
-         <image bindtap="deleteStory" class="stories-delete" data-index="{{itemsIndex}}" src="/commons/assets/icons/delete.png"></image>
+  <view class="story">
+    <view class="story-name">
+      <view class="story-name h3">{{userInfo.nickName}}</view>
+      <view class="story-name p">{{item.datetime}}</view>
+    </view>
+    <view class="story-body">
+      <view>
+        {{item.content}}
       </view>
     </view>
-    <view class="stories-description">
-      <view class="stories-text">{{item.content}}</view>
+    <view class="story-delete">
+      <image bindtap="deleteStory" class="story-delete-button" data-index="{{itemsIndex}}" src="/commons/assets/icons/delete.png"></image>
     </view>
   </view>
 </block>

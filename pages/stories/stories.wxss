@@ -1,24 +1,45 @@
 /* pages/stories/stories.wxss */
-.stories {
-  margin: auto;
-  width: 80%;
-  height: 175px;
-  color: black;
-  position: relative;
-  border: black 1px solid;
-  margin-bottom: 20px;
+.story {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
-
-.stories-header-text {
-  padding-left: 15px;
+.story:last-child {
+  border-bottom: none;
 }
-
-.stories-text {
-  border-top: black 2px solid;
-  padding-left: 15px;  
+.story-body {
+  flex-grow: 1;
 }
-
-.stories-delete {
+.story-name {
+  padding-left: 10px;
+  min-width: 100px;
+}
+.story-name.h3 {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.story-name.p {
+  font-size: 13px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+.story-body {
+  font-size: 13px;
+  color: rgba(0,0,0,0.7);
+}
+.story-body {
+  color: rgba(0,0,0,0.4);
+}
+.story-body p {
+  margin: 6px 0;
+}
+.story-delete {
+  padding-right: 5px;
+}
+.story-delete-button {
   width: 24px;
   height: 24px;
   float: right;
