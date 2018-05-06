@@ -1,4 +1,14 @@
 <!--pages/post/post.wxml-->
+<view class="header">
+  <view class="left">
+    <view class="title">{{userInfo.nickName}}</view>
+    <view class="slogan">Fuck it good</view>
+  </view>
+  <view class="right">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
+</view>
+
 <view class="section">
   <form bindsubmit="submitStory">
     <textarea class="textbox" placeholder="write your story here" name="textarea"/>
