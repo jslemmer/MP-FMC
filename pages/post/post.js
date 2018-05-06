@@ -1,5 +1,6 @@
 // pages/post/post.js
 let app = getApp()
+var util = require('../../utils/util.js')
 
 Page({
 
@@ -13,7 +14,10 @@ Page({
   submitStory: function (e) {
     console.log('submit story')
 
-    app.globalData.stories.push(e.detail.value.textarea)  
+    let datetime = util.formatTime(new Date()) 
+    let content = e.detail.value.textarea
+
+    app.globalData.stories.unshift({datetime: datetime, content: content })  
     
     wx.setStorage({
       key: 'stories',
