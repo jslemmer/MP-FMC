@@ -12,7 +12,6 @@
 }
 
 .title {
-  padding-top: 40px;
   font-size: 24px;
   text-align: center;
 }
@@ -40,4 +39,23 @@
 .stories-text {
   border-top: black 2px solid;
   padding-left: 15px;  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.left {
+  float: left;
+  width: 70%;
+  padding-top: 40px;
+}
+
+.right {
+  float: left;
+  width: 30%;
+  padding-top: 20px;
 }

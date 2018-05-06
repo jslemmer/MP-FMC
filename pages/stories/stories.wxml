@@ -1,7 +1,12 @@
 <!--pages/stories/stories.wxml-->
 <view class="header">
-  <view class="title">Fuck my code</view>
-  <view class="slogan">Fuck it good</view>
+  <view class="left">
+    <view class="title">{{userInfo.nickName}}</view>
+    <view class="slogan">Fuck it good</view>
+  </view>
+  <view class="right">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
 </view>
 
 <block wx:for="{{stories}}" wx:key="{{stories}}">
