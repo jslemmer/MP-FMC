@@ -17,3 +17,9 @@
   border-top: black 2px solid;
   padding-left: 15px;  
 }
+
+.stories-delete {
+  width: 24px;
+  height: 24px;
+  float: right;
+}

@@ -12,7 +12,10 @@
 <block wx:for="{{stories}}" wx:key="{{stories}}">
   <view class="stories">
     <view class="stories-header">
-      <view class="stories-header-text">Today</view>
+      <view class="stories-header-text">
+        Today
+         <image bindtap="deleteStory" class="stories-delete" data-index="{{index}}" src="/commons/assets/icons/delete.png"></image>
+      </view>
     </view>
     <view class="stories-description">
       <view class="stories-text">{{item}}</view>

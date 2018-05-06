@@ -52,6 +52,31 @@ Page({
     })
   },
 
+  deleteStory: function (e) {
+    console.log(e.currentTarget.dataset.index)
+
+    console.log(app.globalData.stories)
+    app.globalData.stories.splice(e.currentTarget.dataset.index, 1) 
+    console.log(app.globalData.stories)
+
+    wx.setStorage({
+      key: 'stories',
+      data: app.globalData.stories
+    })
+
+    wx.showToast({
+      title: 'Deleting...',
+      icon: 'loading',
+      duration: 1000
+    })
+
+    setTimeout(function () {
+      wx.reLaunch({
+        url: '/pages/stories/stories'
+      })
+    }, 1000)
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
